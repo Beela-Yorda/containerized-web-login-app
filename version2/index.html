@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Form</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="login-container">
+  <div class="left-section">
+    <img src="welcome.jpg" alt="Welcome" class="welcome-image">
+  </div>
+  <div class="right-section">
+    <h2>Login</h2>
+    <form id="login-form" action="process_form.php" method="POST">
+      <div class="form-group">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <div class="form-group">
+        <input type="checkbox" id="remember-me">
+        <label for="remember-me">Remember Me</label>
+      </div>
+      <button type="submit">Login</button>
+    </form>
+    <div class="registration-link">
+    </form>
+      <p>Don't have an account? <a href="registration.html">Register</a></p>
+    </div>
+</div>
+</body>
+</html>
