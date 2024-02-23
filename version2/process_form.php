@@ -17,12 +17,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $_SESSION["username"] = $username;
         // Optionally, you can set a separate session variable for the password
         $_SESSION["password"] = $password;
-        header("Location: welcome.php");
+        echo "Welcome! This is admin";
         exit;
     } else {
         // If the credentials are invalid, redirect to the error page
-        header("Location: error.php");
-        exit;
+        echo "Invalid username or password";
     }
 } else {
     // If the form submission method is not POST, redirect back to the login page
